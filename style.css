@@ -9,7 +9,7 @@
 /* header section */
 nav {
   width: 80%;
-  max-width: 1600px;
+  max-width: 1520px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,9 +30,11 @@ nav > button {
   background-color: transparent;
 }
 .hero-banner {
+  max-width: 1920px;
   background-image: url("./assets/Hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 .hero-content {
   max-width: 1350px;
@@ -63,7 +65,7 @@ nav > button {
   text-align: center;
   opacity: 0.7;
 }
-.hero-content > button {
+.hero-content > a {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 600;
@@ -72,4 +74,100 @@ nav > button {
   border: none;
   border-radius: 8px;
   background: rgb(13, 19, 33);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* main section */
+main {
+  width: 80%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+/* Why Web Development section */
+.why-web-dev {
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
+  margin-top: 100px;
+  margin-bottom: 120px;
+  padding: 100px 120px;
+}
+.why-web-dev > h1 {
+  width: 90%;
+  max-width: 1130px;
+  color: rgb(13, 19, 33);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.why-web-dev > p {
+  width: 90%;
+  max-width: 1130px;
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.common-card-container-style {
+  border-radius: 16px;
+  background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+  padding: 60px;
+}
+.common-card-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-2 {
+  flex-direction: row-reverse;
+}
+.common-card-style > div {
+  width: 60%;
+  max-width: 630px;
+}
+.common-card-style > div > h2 {
+  width: 80%;
+  max-width: 520px;
+  color: rgba(13, 19, 33, 0.7);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.common-card-style > div > p {
+  width: 80%;
+  max-width: 520px;
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+.common-card-style > div > a {
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  border: 1px solid rgb(13, 19, 33);
+  opacity: 0.7;
+  padding: 16px 25px;
+  cursor: pointer;
+  text-decoration: none;
 }

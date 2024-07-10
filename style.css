@@ -241,7 +241,7 @@ main {
 .target-class-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 145px;
 }
 .target-card-1 {
@@ -352,3 +352,71 @@ main {
   cursor: pointer;
 }
 
+/* support section */
+.support {
+  border-radius: 16px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/handshake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 55px;
+  margin-bottom: 110px;
+}
+.support-content {
+  width: 90%;
+  max-width: 1130px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.support-content > h2 {
+  width: 80%;
+  max-width: 980px;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.support-content > p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+form {
+  display: flex;
+}
+input[type="text"] {
+  width: 725px;
+  padding: 23px 25px;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  margin-right: 22px;
+}
+input[type="text"]::placeholder {
+  color: rgba(13, 19, 33, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+input[type="submit"] {
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 23px 25px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}

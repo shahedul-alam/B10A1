@@ -28,6 +28,7 @@ nav > button {
   border: 1px solid rgb(13, 19, 33);
   border-radius: 8px;
   background-color: transparent;
+  cursor: pointer;
 }
 .hero-banner {
   max-width: 1920px;
@@ -393,15 +394,17 @@ main {
   opacity: 0.7;
 }
 form {
+  width: 80%;
+  max-width: 980px;
   display: flex;
+  justify-content: space-between;
 }
 input[type="text"] {
-  width: 725px;
+  width: 75%;
   padding: 23px 25px;
   border: 1px solid rgba(13, 19, 33, 0.15);
   border-radius: 8px;
   background: rgb(255, 255, 255);
-  margin-right: 22px;
 }
 input[type="text"]::placeholder {
   color: rgba(13, 19, 33, 0.4);
@@ -411,10 +414,10 @@ input[type="text"]::placeholder {
   text-align: left;
 }
 input[type="submit"] {
+  width: 15%;
   color: rgb(13, 19, 33);
   font-size: 20px;
   font-weight: 600;
-  padding: 23px 25px;
   border: none;
   border-radius: 8px;
   background: rgb(255, 255, 255);
